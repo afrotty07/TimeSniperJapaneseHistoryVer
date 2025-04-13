@@ -201,6 +201,7 @@
                     if (century === targetCentury) {
                         score++;
                         showFeedback('正解！', true);
+                        btn.remove(); // 正解だったら選択肢を削除
                     } else {
                         score = Math.max(0, score - 1);
                         showFeedback('残念…', false);
